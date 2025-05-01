@@ -1,5 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Poppins', sans-serif;
   margin: 0;
   padding: 0;
   background: #f4f4f4;
@@ -19,34 +21,17 @@ nav a {
   text-decoration: none;
 }
 
+.logo {
+  max-height: 60px;
+  margin-bottom: 10px;
+}
+
 main {
-  padding: 20px;
+  padding: 40px 20px;
   background: white;
 }
 
-footer {
-  background: #ccc;
-  text-align: center;
-  padding: 10px;
-}
-
-.logo {
-  max-height: 100px;
-  margin: 10px auto;
-  display: block;
-}
-
-.whatsapp-link {
-  display: inline-block;
-  margin-top: 20px;
-  padding: 10px 15px;
-  background-color: #25D366;
-  color: white;
-  text-decoration: none;
-  border-radius: 5px;
-  font-weight: bold;
-}
-
+/* Rodapé moderno */
 .footer-custom {
   background-color: #001f3f;
   color: white;
@@ -56,23 +41,36 @@ footer {
 .footer-container {
   display: flex;
   justify-content: space-between;
+  align-items: flex-start;
   flex-wrap: wrap;
   max-width: 1100px;
   margin: 0 auto;
+  gap: 20px;
+}
+
+.footer-left img {
+  max-height: 70px;
+  margin-bottom: 15px;
 }
 
 .footer-column {
   flex: 1;
   min-width: 250px;
-  margin: 10px;
 }
 
 .footer-column h4 {
   margin-bottom: 10px;
+  font-size: 16px;
 }
 
-.footer-column p, .footer-column a {
+.footer-column p,
+.footer-column a {
   color: white;
   text-decoration: none;
   font-size: 14px;
+  line-height: 1.6;
+}
+
+.footer-column a:hover {
+  text-decoration: underline;
 }
